@@ -2,6 +2,8 @@ package com.logincash;
 
 import android.app.Application;
 import android.content.Context;
+import com.facebook.react.bridge.JSIModulePackage;
+import com.swmansion.reanimated.ReanimatedJSIModulePackage;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactInstanceManager;
@@ -27,6 +29,11 @@ public class MainApplication extends Application implements ReactApplication {
           // Packages that cannot be autolinked yet can be added manually here, for example:
           // packages.add(new MyReactNativePackage());
           return packages;
+        }
+
+        @Override
+        protected JSIModulePackage getJSIModulePackage() { 
+          return new ReanimatedJSIModulePackage(); 
         }
 
         @Override

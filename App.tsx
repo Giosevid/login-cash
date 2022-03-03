@@ -1,24 +1,29 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {LogBox} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
+import {createDrawerNavigator} from '@react-navigation/drawer';
+import DetailsScreen from './src/screens/DetailsScreen';
+import StackNavigator from './src/navigation/stackNavigation';
+import {ROUTES} from './src/navigation/routes';
+import DrawerContentNavigation from './src/navigation/drawerNavigation';
+import RootStackScreen from './src/navigation/rootStackScreen';
 
-const HomeScreen: React.FC = () => {
-  return (
-    <View>
-      <Text>Home Screen</Text>
-    </View>
-  );
-};
+LogBox.ignoreLogs([
+  "[react-native-gesture-handler] Seems like you're using an old API with gesture components, check out new Gestures system!",
+]);
 
-const Stack = createStackNavigator();
+const Drawer = createDrawerNavigator();
 
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen} />
-      </Stack.Navigator>
+      <RootStackScreen />
+      {/* <Drawer.Navigator
+        initialRouteName={ROUTES.HOME}
+        drawerContent={props => <DrawerContentNavigation {...props} />}>
+        <Drawer.Screen name={ROUTES.HOME} component={StackNavigator} />
+        <Drawer.Screen name={ROUTES.DETAILS} component={DetailsScreen} />
+      </Drawer.Navigator> */}
     </NavigationContainer>
   );
 };
