@@ -1,35 +1,35 @@
 import React from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {Text, TouchableOpacity} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import {
-  NavigationDrawerProps,
-  RootStackParamList,
-} from '../../navigation/interfaces/navigation';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import {useNavigation} from '@react-navigation/native';
 import styles from './styles';
 import colors from '../../assets/colors';
 
 type Props = {
   label: string;
-  route: keyof RootStackParamList;
+  secondary?: true;
+  onPress: () => void;
 };
 
-const Button = ({label, route}: Props) => {
-  const navigation = useNavigation<NavigationDrawerProps>();
+const Button = ({label, secondary, onPress}: Props) => {
+  const styleColor = secondary
+    ? colors.gradientButtonSecondary
+    : colors.gradientButtonPrimary;
   return (
-    <View style={styles.button}>
-      <TouchableOpacity onPress={() => navigation.navigate(route)}>
-        <LinearGradient colors={['#031f34', '#123c38']} style={styles.wrapper}>
-          <Text style={styles.label}>{label}</Text>
-          <MaterialIcons
-            name="navigate-next"
-            color={colors.secondary}
-            size={20}
-          />
-        </LinearGradient>
-      </TouchableOpacity>
-    </View>
+    <TouchableOpacity onPress={onPress} style={styles.container}>
+      <LinearGradient
+        start={{x: 0, y: 0}}
+        end={{x: 1, y: 0}}
+        colors={styleColor}
+        style={styles.wrapper}>
+        <Text style={styles.label}>{label}</Text>
+        <MaterialIcons
+          name="navigate-next"
+          color={colors.secondary}
+          size={20}
+        />
+      </LinearGradient>
+    </TouchableOpacity>
   );
 };
 

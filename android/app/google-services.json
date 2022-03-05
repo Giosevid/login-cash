@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "626373482212",
+    "project_id": "cash-login-343022",
+    "storage_bucket": "cash-login-343022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626373482212:android:94a1b6a30f72ff3d04bef1",
+        "android_client_info": {
+          "package_name": "com.logincash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "626373482212-98u90kkb4q1dr9a18ikakboldpl27ffu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTbhLFeNuM8qyaPPLOjsdrjGkX0bieqfM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "626373482212-98u90kkb4q1dr9a18ikakboldpl27ffu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

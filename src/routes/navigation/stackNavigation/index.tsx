@@ -1,10 +1,10 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import HomeScreen from '../../screens/HomeScreen';
-import DetailsScreen from '../../screens/DetailsScreen';
+import HomeScreen from '../../../screens/HomeScreen';
+import DetailsScreen from '../../../screens/DetailsScreen';
 import {stackNavigationOptions} from '../constants';
 import Icon from 'react-native-vector-icons/Ionicons';
-import colors from '../../assets/colors';
+import colors from '../../../assets/colors';
 import {useNavigation} from '@react-navigation/native';
 import {NavigationDrawerProps} from '../interfaces/navigation';
 

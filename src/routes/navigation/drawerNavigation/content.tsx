@@ -4,10 +4,10 @@ import {Avatar, Title, Caption, Drawer} from 'react-native-paper';
 import {DrawerContentScrollView, DrawerItem} from '@react-navigation/drawer';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import styles from './styles';
+import {useAuthContext} from '../../../context/Auth/AuthContext';
 
 const DrawerContentNavigation = (props: any) => {
-  //const { signOut, toggleTheme } = React.useContext(AuthContext);
-
+  const {authContext} = useAuthContext();
   return (
     <View style={styles.drawerContent}>
       <DrawerContentScrollView {...props}>
@@ -55,7 +55,7 @@ const DrawerContentNavigation = (props: any) => {
             <Icon name="exit-to-app" color={color} size={size} />
           )}
           label="Sign Out"
-          onPress={() => {}}
+          onPress={() => authContext.signOut()}
         />
       </Drawer.Section>
     </View>

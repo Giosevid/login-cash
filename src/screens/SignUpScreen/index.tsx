@@ -7,6 +7,7 @@ import {
   Platform,
   StyleSheet,
   StatusBar,
+  Alert,
 } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 import LinearGradient from 'react-native-linear-gradient';
@@ -14,10 +15,7 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Feather from 'react-native-vector-icons/Feather';
 
 import {useTheme} from 'react-native-paper';
-
-//import {AuthContext} from '../components/context';
-
-//import Users from '../model/users';
+import {useAuthContext} from '../../context/Auth/AuthContext';
 
 const SignUpScreen = ({navigation}) => {
   const [data, setData] = React.useState({
@@ -33,7 +31,7 @@ const SignUpScreen = ({navigation}) => {
 
   const {colors} = useTheme();
 
-  //const {signIn} = React.useContext(AuthContext);
+  const {authContext} = useAuthContext();
 
   const textInputChange = val => {
     if (val.trim().length >= 4) {
@@ -277,7 +275,21 @@ const SignUpScreen = ({navigation}) => {
           </Text>
         </TouchableOpacity>
         <View style={styles.button}>
-          <TouchableOpacity style={styles.signIn} onPress={() => {}}>
+          <TouchableOpacity
+            style={styles.signIn}
+            onPress={() => {
+              if (data.username && data.password) {
+                authContext.signUp({
+                  userName: data.username,
+                  password: data.password,
+                });
+              } else {
+                Alert.alert(
+                  'Datos incompletos',
+                  'Nombre y contraseña son requeridos',
+                );
+              }
+            }}>
             <LinearGradient
               colors={['#08d4c4', '#01ab9d']}
               style={styles.signIn}>

@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
-import colors from '../../assets/colors';
-import {fontWeights} from '../../assets/fonts/typography';
+import colors from '../../../assets/colors';
+import {fontWeights} from '../../../assets/fonts/typography';
 
 const styles = StyleSheet.create({
   drawerContent: {

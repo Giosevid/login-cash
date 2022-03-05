@@ -3,7 +3,7 @@ import {DrawerNavigationProp} from '@react-navigation/drawer';
 
 export type RootStackParamList = {
   Home: undefined;
-  Details: undefined;
+  Details: {Slug: string};
   SignInScreen: undefined;
 };
 
