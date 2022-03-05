@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>626373482212-s59e7i4r6t5o4ulg2e79ik63gf1rffo4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.626373482212-s59e7i4r6t5o4ulg2e79ik63gf1rffo4</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>626373482212-cr0s4jcgl0nnf5i1erf5v47umak92lfp.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAslB3ULXkQ_bIAN56Kz7lxZ1evj5QexT4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>626373482212</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.reactjs.native.example.loginCash</string>
+	<key>PROJECT_ID</key>
+	<string>cash-login-343022</string>
+	<key>STORAGE_BUCKET</key>
+	<string>cash-login-343022.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:626373482212:ios:05e8091ea82066bf04bef1</string>
+</dict>
+</plist>
