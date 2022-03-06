@@ -28,7 +28,7 @@ yarn test
 ```
 
 ## Mejoras por hacer
-* Hacer commits mas pequeños.
+* Hacer Pull requests mas pequeños.
 * Agregar algun translate.
 * Mejorar el codigo en la pagina de registro, paises, y detalle.
 * Hacer más test (Unitarios y E2E).
