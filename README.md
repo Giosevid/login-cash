@@ -8,6 +8,7 @@ Use el manejador de paquetes [yarn](https://classic.yarnpkg.com/lang/en/docs/ins
 
 ```bash
 yarn install
+npx pod-install
 ```
 
 ## Correr proyecto
@@ -20,11 +21,17 @@ yarn ios
 yarn android
 ```
 
+## Correr proyecto
+
+```python
+yarn test
+```
+
 ## Mejoras por hacer
 * Hacer commits mas pequeños.
 * Agregar algun translate.
 * Mejorar el codigo en la pagina de registro, paises, y detalle.
-* Hacer test (Unitarios y E2E).
+* Hacer más test (Unitarios y E2E).
 * Mejorar la UI.
 
 ## Autor

@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Button Snapshot Button 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "marginBottom": 16,
+      "opacity": 1,
+      "width": "100%",
+    }
+  }
+>
+  <LinearGradient
+    colors={
+      Array [
+        "#7474BF",
+        "#348AC7",
+        "#7474BF",
+      ]
+    }
+    end={
+      Object {
+        "x": 1,
+        "y": 0,
+      }
+    }
+    start={
+      Object {
+        "x": 0,
+        "y": 0,
+      }
+    }
+    style={
+      Object {
+        "alignItems": "center",
+        "borderRadius": 50,
+        "flexDirection": "row",
+        "height": 40,
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#87ff2f",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Test Button
+    </Text>
+    <Icon
+      color="#87ff2f"
+      name="navigate-next"
+      size={20}
+    />
+  </LinearGradient>
+</View>
+`;
