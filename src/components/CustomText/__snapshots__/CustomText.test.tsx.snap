@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Button expect textType with "bold" and returns %p 1`] = `
+<Text
+  style={
+    Array [
+      undefined,
+      Object {
+        "fontWeight": "bold",
+      },
+    ]
+  }
+>
+  Test Button
+</Text>
+`;
+
+exports[`Test Button expect textType with "light" and returns %p 1`] = `
+<Text
+  style={
+    Array [
+      undefined,
+      Object {
+        "fontWeight": "100",
+      },
+    ]
+  }
+>
+  Test Button
+</Text>
+`;
+
+exports[`Test Button expect textType with "regular" and returns %p 1`] = `
+<Text
+  style={
+    Array [
+      undefined,
+      Object {
+        "fontWeight": "normal",
+      },
+    ]
+  }
+>
+  Test Button
+</Text>
+`;
