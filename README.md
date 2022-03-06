@@ -21,7 +21,7 @@ yarn ios
 yarn android
 ```
 
-## Correr proyecto
+## Correr tests
 
 ```python
 yarn test
